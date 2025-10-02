@@ -1,0 +1,109 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Alan Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.Main_page{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 70px 1fr;
+}
+.header{
+    position: sticky;
+    top: 0px;
+    display: grid;
+    grid-template-columns: 2fr 4fr 1fr 1fr;
+    background-color: rgb(1, 23, 56);
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(.6);
+    padding-right: 150px;
+}
+.search_bar{
+    padding: 0px;
+    display: flex;
+    justify-content: start;
+    align-items:center ;
+}
+.search{
+    text-align:start ;
+    font-size: 20px;
+    padding: 10px 30px ;
+    padding-right: 200px;
+}
+.return_order{
+    padding: 10px 50px;
+    font-size: 20px;
+    font-weight: 650;
+}
+.cart{
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.Your_Order{
+    padding: 30px 150px;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+}
+.order_details{
+    padding: 10px 20px;
+}
+.box{
+    border-radius: 10px;
+    border: 1px solid grey;
+    display: grid;
+    grid-template-rows: 80px 1fr;
+}
+.placed,.total,.order_id{
+    font-weight: 600;
+    padding: 20px;
+    display: flex;
+    gap: 5px;
+    flex-direction:column;
+}
+.tracking_details{
+    background-color: rgb(230, 228, 228);
+    display: grid;
+    border-radius: 10px;
+    border-bottom: 1px solid grey;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    grid-template-columns: 2fr 5fr 3fr;
+}
+.order_grid{
+    padding: 20px 0px;
+    padding-bottom: 0px;
+}
+.product{
+    display: grid;
+    grid-template-columns: 2fr 5fr 3fr;
+    height: 250px;
+    border-bottom: 1px solid gainsboro;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about{
+    padding: 10px 30px;
+    padding-left: 20px;
+    padding-right: 50px;
+    display: grid;
+    grid-template-rows: 30px 70px 50px;
+}
+.button_ba{
+    font-weight: 700;
+    display: grid;
+    grid-template-columns: 15px 70px;
+    gap: 10px;
+}
+.track{
+    padding: 40px 50px;
+}

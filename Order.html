@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon-Orders</title>
+    <link rel="stylesheet" href="CSS/Order.css">
+</head>
+
+<body>
+    <div class="Main_page">
+        <div class="header">
+            <div class="icon">
+                <a href="Amazon.html">
+                    <img src="https://supersimple.dev/projects/amazon/images/amazon-logo-white.png" alt="icon">
+                </a>
+            </div>
+
+            <div class="search_bar">
+                <input type="text" name="search" class="search" placeholder="Search">
+                <button style="padding: 0px; background-color: goldenrod;"><img
+                        src="https://supersimple.dev/projects/amazon/images/icons/search-icon.png" alt="search" style="transform: scale(.95);
+                padding: 0px; background-color: goldenrod; height: 43px;"></button>
+            </div>
+            <div class="return_order">
+                <a href="Order.html" style="color: white; text-decoration: none;">
+                    <span>Returns</span>
+                    <span>&orders</span>
+                </a>
+            </div>
+            <div class="cart">
+                <a href="Checkout.html" style="text-decoration: none;">
+                    <div>
+                        <span id="cart"
+                            style="margin-left: 18px; font-weight: 700; position: relative; top: 10px; font-size: 18px; color: goldenrod;">0</span>
+                    </div>
+                    <div>
+                        <img src="https://supersimple.dev/projects/amazon/images/icons/cart-icon.png" alt=""
+                            style="height: 30px; width: 40px;">
+                        <span style="color: white; font-size: 16px; font-weight: 600;">cart</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="Your_Order">
+            <div class="yo" style="display: flex; align-items: center;">
+                <span style="color: black; font-weight: 700; font-size: 30px;">Your Orders</span>
+            </div>
+            <div class="order_details">
+                <div class="box">
+                    <div class="tracking_details">
+                        <div class="placed">
+                            <span style="color: green;">Order Placed :</span>
+                            <span class="order_date">August 12</span>
+                        </div>
+                        <div class="total">
+                            <span style="color: green;">Total :</span>
+                            <span class="price">$35.06</span>
+                        </div>
+                        <div class="order_id">
+                            <span style="color: green;">Order Id :</span>
+                            <span class="id">27cba69d-4c3d-4098-b42d-ac7fa62b7664</span>
+                        </div>
+                    </div>
+
+                    <div class="order_grid">
+                        <div class="product">
+                            <div class="image">
+                                <img src="https://supersimple.dev/projects/amazon/images/products/athletic-cotton-socks-6-pairs.jpg"
+                                    alt="sock" style="height: 166.15px; width: 140px;">
+                            </div>
+                            <div class="about">
+                                <div class="name">
+                                    <span class="p_name" style="font-weight: 600;">Black and Gray Athletic Cotton Socks
+                                        - 6 Pairs</span>
+                                </div>
+                                <div class="date_quantity" style="padding: 10px 0px;">
+                                    <div>
+                                        <span style="color: green; font-weight: 550;">Arriving on : <span class="date"
+                                                style="color: black;">August 15</span></span>
+                                    </div>
+                                    <span style="color: green; font-weight: 550;">Qantity : <span class="quantity"
+                                            style="color: black;">1</span></span>
+                                </div>
+                                <div class="buy_again button_primary">
+                                    <button class="button_ba"
+                                        style="cursor: pointer; padding: 10px 30px; border-radius: 10px; border: 0px; background-color: goldenrod; "><img
+                                            src="http://127.0.0.1:5501/images/icons/buy-again.png"
+                                            style="height: 15px; width: 15px;" alt=""> Buy Again</button>
+                                </div>
+                            </div>
+
+                            <div class="track">
+                                <div class="track_order">
+                                    <a href="Track_orders.html">
+                                    <button
+                                        style="padding: 10px 40px; border-radius: 20px; border:0px;  box-shadow: 0px 0px 2px 1px grey; cursor: pointer;">Track
+                                        Package</button>
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div class="image">
+                                <img src="http://127.0.0.1:5501/images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg"
+                                    alt="sock" style="height: 166.15px; width: 140px;">
+                            </div>
+                            <div class="about">
+                                <div class="name">
+                                    <span class="p_name" style="font-weight: 600;">Adults Plain Cotton T-Shirt - 2 Pack</span>
+                                </div>
+                                <div class="date_quantity" style="padding: 10px 0px;">
+                                    <div>
+                                        <span style="color: green; font-weight: 550;">Arriving on : <span class="date"
+                                                style="color: black;">August 19</span></span>
+                                    </div>
+                                    <span style="color: green; font-weight: 550;">Qantity : <span class="quantity"
+                                            style="color: black;">2</span></span>
+                                </div>
+                                <div class="buy_again button_primary">
+                                    <button class="button_ba"
+                                        style="cursor: pointer; padding: 10px 30px; border-radius: 10px; border: 0px; background-color: goldenrod; "><img
+                                            src="http://127.0.0.1:5501/images/icons/buy-again.png"
+                                            style="height: 15px; width: 15px;" alt=""> Buy Again</button>
+                                </div>
+                            </div>
+
+                            <div class="track">
+                                <div class="track_order">
+                                    <a href="Track_orders.html">
+                                    <button style="padding: 10px 40px; border-radius: 20px; border:0px;  box-shadow: 0px 0px 2px 1px grey; cursor: pointer;">Track Package</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="order_details">
+                <div class="box">
+                    <div class="tracking_details">
+                        <div class="placed">
+                            <span style="color: green;">Order Placed :</span>
+                            <span class="order_date">August 12</span>
+                        </div>
+                        <div class="total">
+                            <span style="color: green;">Total :</span>
+                            <span class="price">$35.06</span>
+                        </div>
+                        <div class="order_id">
+                            <span style="color: green;">Order Id :</span>
+                            <span class="id">27cba69d-4c3d-4098-b42d-ac7fa62b7664</span>
+                        </div>
+                    </div>
+
+                    <div class="order_grid">
+                        <div class="product">
+                            <div class="image">
+                                <img src="http://127.0.0.1:5501/images/products/intermediate-composite-basketball.jpg"
+                                    alt="sock" style="height: 140px; width: 140px;">
+                            </div>
+                            <div class="about">
+                                <div class="name">
+                                    <span class="p_name" style="font-weight: 600;">Intermediate Size Basketball</span>
+                                </div>
+                                <div class="date_quantity" style="padding: 10px 0px;">
+                                    <div>
+                                        <span style="color: green; font-weight: 550;">Arriving on : <span class="date"
+                                                style="color: black;">June 17</span></span>
+                                    </div>
+                                    <span style="color: green; font-weight: 550;">Qantity : <span class="quantity"
+                                            style="color: black;">2</span></span>
+                                </div>
+                                <div class="buy_again button_primary">
+                                    <button class="button_ba"
+                                        style="cursor: pointer; padding: 10px 30px; border-radius: 10px; border: 0px; background-color: goldenrod; "><img
+                                            src="http://127.0.0.1:5501/images/icons/buy-again.png"
+                                            style="height: 15px; width: 15px;" alt=""> Buy Again</button>
+                                </div>
+                            </div>
+
+                            <div class="track">
+                                <div class="track_order">
+                                    <a href="Track_orders.html">
+                                    <button
+                                        style="padding: 10px 40px; border-radius: 20px; border:0px;  box-shadow: 0px 0px 2px 1px grey; cursor: pointer;">Track
+                                        Package</button>
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

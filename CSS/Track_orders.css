@@ -1,0 +1,81 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Alan Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+body{
+    height: 100vh;
+}
+.Main_page{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 70px 1fr;
+}
+.header{
+    position: sticky;
+    top: 0px;
+    display: grid;
+    grid-template-columns: 2fr 4fr 1fr 1fr;
+    background-color: rgb(1, 23, 56);
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(.6);
+    padding-right: 150px;
+}
+.search_bar{
+    padding: 0px;
+    display: flex;
+    justify-content: start;
+    align-items:center ;
+}
+.search{
+    text-align:start ;
+    font-size: 20px;
+    padding: 10px 30px ;
+    padding-right: 200px;
+}
+.return_order{
+    padding: 10px 50px;
+    font-size: 20px;
+    font-weight: 650;
+}
+.cart{
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.Details{
+    display: grid;
+    grid-template-rows: 40px 1fr;
+    padding: 30px 300px;
+}
+.name{
+    display: grid;
+    grid-template-rows: 25px 25px;
+}
+.track{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 60px;
+    padding: 10px 30px;
+}
+.place{
+    font-weight: 700;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.progress_bar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 20px;
+    background-color: rgb(219, 217, 217);
+}
+.green{
+    border-radius: 20px;
+    background-color: green;
+}
