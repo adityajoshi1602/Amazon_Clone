@@ -1,5 +1,6 @@
 console.log('hello')
-
+//using modules --> Only works on live server
+import {cart} from '../JS/cart.js';
 //making copy of product data to add new products
 let products_html = '';
 products.forEach((products) => {
@@ -58,6 +59,12 @@ document.querySelectorAll('.add').forEach((button)=>{
                 quantity:1
             });
         }
+
+        let num_cart =0;
+        cart.forEach((element)=>{
+            num_cart+=element.quantity;
+        });
+        document.querySelector('#cart').innerHTML=num_cart;
         console.log(cart);
     });
 });
