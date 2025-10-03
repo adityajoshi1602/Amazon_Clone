@@ -1,8 +1,13 @@
-console.log('hello')
+console.log('hello');
+
 //using modules --> Only works on live server
-import {cart} from '../JS/cart.js';
+import {cart,addtocart} from '../data/cart.js';
+import { products } from '../data/products.js';
+//import * as cartmodule from 'data.js' can import everything and excess
+// like cartmodule.cart
+
 //making copy of product data to add new products
-let products_html = '';
+    let products_html = '';
 products.forEach((products) => {
     products_html += `            <div class="product1">
                 <div class="img">
@@ -37,34 +42,23 @@ products.forEach((products) => {
             </div>`
 
 });
-console.log(products_html);
 document.querySelector('.products').innerHTML = products_html;
 
-document.querySelectorAll('.add').forEach((button)=>{
-    button.addEventListener('click',()=>{
-        const product_id=button.dataset.id;
-        let match_item;
-        cart.forEach((element)=>
-        {
-            if(element.productid===product_id){
-                match_item=element;
-            }
-        });
-
-        if (match_item) {
-            match_item.quantity +=1;
-        }else{
-            cart.push({
-                productid:product_id,
-                quantity:1
-            });
-        }
-
+function updatecart() {
         let num_cart =0;
         cart.forEach((element)=>{
             num_cart+=element.quantity;
         });
         document.querySelector('#cart').innerHTML=num_cart;
+};
+
+document.querySelectorAll('.add').forEach((button)=>{
+    button.addEventListener('click',()=>{
+        const product_id=button.dataset.id;
+
+        
+        addtocart(product_id);
+        updatecart();
         console.log(cart);
     });
 });
