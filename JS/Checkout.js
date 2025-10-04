@@ -1,7 +1,8 @@
 import { products } from "../data/products.js";
 import { cart, removeitem,updatedeliverydate } from "../data/cart.js";
 import dayjs from "https://unpkg.com/supersimpledev@8.5.0/dayjs/esm/index.js";
-import { delivery_options } from "../data/deliveryoptions.js"
+import { delivery_options } from "../data/deliveryoptions.js";
+import { render_payment_summary } from "../data/summary/payment_summary.js";
 
 let block = '';
 function render_order_summary() {
@@ -108,3 +109,4 @@ document.querySelectorAll('.option_btn').forEach((btn)=>{
 };
 
 render_order_summary();
+render_payment_summary();
